@@ -11,10 +11,43 @@
 </head>
 <body>
     <form>
-    <button> ☑️   PNR STATUS</button>
-    <button> 📅   CHARTS/VACANCY</button>
    <center> <h1>BOOK TICKET</h1></center>
-   <p><input type="text" placeholder="↗️From" min="5",max="5"></p>
+   From
+   <input list="stations1"/>
+    <datalist id="stations1">
+      <option value="Hyderabad"></option>
+      <option value="Bangalore"></option>
+      <option value="Delhi"></option>
+    </datalist>
+    To
+    <input list="stations2"/>
+    <datalist id="stations2">
+      <option value="Hyderabad"></option>
+      <option value="Bangalore"></option>
+      <option value="Delhi"></option>
+    </datalist>
+    <br>
+    <br>
+    <button> 
+        🛄 All classes
+        <input list="classes"/>
+    <datalist id="classes">
+      <option value="LUXURY"></option>
+      <option value="BUSINESS"></option>
+      <option value="ECONOMY"></option>
+    </datalist>
+    </button>
+    <p><input type="date" min="2020-10-14" max="2025-10-14" step="7"></p>
+    <button> 
+        Passenger Type
+        <input list="passenger"/>
+    <input list="passenger"/>
+    <datalist id="passenger">
+      <option value="Ladies"></option>
+      <option value="Gents"></option>
+      <option value="Senior Citizen"></option>
+    </datalist>
+  </body>
     </form>
 </body>
 </html>
