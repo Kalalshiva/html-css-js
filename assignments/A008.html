@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odd/Even Checker</title>
+<style>
+    .result {
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h2>Odd/Even Checker</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput">
+    <button onclick="checkNumber()">Check</button>
+    <div id="result" class="result"></div>
+
+    <script>
+        function checkNumber() {
+            var numberInput = document.getElementById("numberInput").value;
+            var resultDiv = document.getElementById("result");
+
+            // Check if the input is a valid number
+            if (isNaN(numberInput)) {
+                resultDiv.textContent = "Invalid input";
+                resultDiv.style.backgroundColor = "gray";
+                return;
+            }
+
+            // Convert input to an integer
+            var num = parseInt(numberInput);
+
+            // Check if the number is odd or even
+            if (num % 2 === 0) {
+                resultDiv.textContent = "Even";
+                resultDiv.style.backgroundColor = "green";
+            } else {
+                resultDiv.textContent = "Odd";
+                resultDiv.style.backgroundColor = "red";
+            }
+        }
+   
