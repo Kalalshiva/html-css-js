@@ -1,0 +1,114 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+}
+.container1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container2, .container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.container2{
+    width: 500px;
+    align-items: flex-start;
+}
+.container2 h1{
+    font-family: "facebook letter faces";
+    font-size: 68px;
+    color: rgb(15, 123, 231);
+}
+.container2 p{
+    font-size: 30px;
+    color: black;
+    height: 200px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.form{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 16px;
+}
+.loginbtn{
+    background-color: rgb(15, 123, 231);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: 700;
+    transition: 0.5s;
+}
+.loginbtn:hover{
+    background-color: green;
+
+}
+.forgetbtn{
+    margin:15px;
+    text-decoration: none;
+    color:  rgb(15, 123, 231);
+    font-family: 'Arial';
+    font-size: 14px;
+}
+.signupbtn{
+    background-color:  rgb(15, 123, 231);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+.signupbtn:hover{
+    background-color: green;
+}
+.container3p{
+    font-family: 'Arial';
+    font-size: 15px;
+}
+@media(max-width:950px){
+    .container{
+        flex-direction: column;
+    }
+}
+.container2{
+    width: 400px;
+    align-content: center;
+    align-items: center; 
+}
+.container2 p{
+    height: 75px;
+}
